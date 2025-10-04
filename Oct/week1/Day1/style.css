@@ -1,0 +1,37 @@
+/*
+1.simple selector
+  => id selector
+  => class name selector
+  => tag name selector
+  => group selector
+  => universal selector
+
+2.combine selector
+*/
+
+
+/* ! id selector */
+#paragraph1{
+    background-color: red;
+}
+
+/* ! class name selector */
+.classRoomPara{
+    color: blue;
+}
+
+/* ! tag name selector */
+h1{
+    background-color:brown ;
+}
+
+/* ! group name selector */
+.classRoomPara,h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ! universal selector */
+*{
+font-family: oblique;
+}
+    
