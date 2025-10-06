@@ -1,0 +1,146 @@
+/* 2.combine selector
+1.Descendant selector(space)
+2.Child selector(>)
+3.Adjescent sibling selector(+)
+4.General sibling selector(~)
+*/
+
+#parent p{
+    background-color: red;
+}
+
+#parent>p{
+    color:blue;
+}
+
+#parent+p{
+    background-color: aqua;
+}
+
+#parent~p{
+    color: brown;
+}
+
+/* 3.Attribute selector */
+
+h1[id="heading"]{
+background-color: brown;
+}
+
+/* 4.Pseudo class selector 
+
+=>:hover
+=>:active
+=>:focus
+=>:visited
+=>first child
+=>last child
+=>nth child
+*/
+
+#box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+
+#box:hover{
+    background-color: yellow;
+}
+
+#box:active{
+    background-color: red;
+}
+
+input:focus{
+    background-color: green;
+}
+
+a:visited{
+    background-color: pink;
+}
+
+ul li:first-child{
+    background-color: pink;
+
+}
+
+ul li:last-child{
+    background-color: blue;
+}
+
+/* an+b */
+ul li:nth-child(2n+1){
+    background-color: blueviolet;
+}
+
+
+/* 5.Pseudo element selector
+=>after
+=>before
+=>first line
+=>first letter
+=>selected
+*/
+/* after */
+h2::after{
+    content: " of the about section";
+}
+
+/* before */
+h2::before{
+    content:"This";
+    color: pink;
+}
+
+/* first line */
+#box::first-line{
+    background-color: yellow;
+}
+
+/* first letter */
+#box::first-letter{
+    font-weight: bold ;
+    font-size: 20px;
+}
+
+/* selection */
+#box::selection{
+    background-color: chartreuse;
+}
+
+/* 
+1.RGB(red(255),green,blue)
+*/
+
+h2{
+    color: rgb(255, 255,100);
+}
+
+h3{
+    color: rgba(155, 200, 200, );
+}
+
+h4{
+    color: #e8e;
+}
+
+.box-model{
+    width: 200px;
+    height: 200px;
+    /*border: 5px solid green;*/
+
+   /*padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px; */
+
+padding: 40px,30px,20px,10px;
+
+border: 2px solid blue;
+border-top: 20px solid;
+margin: 0 20px;
+
+}
+
+    
