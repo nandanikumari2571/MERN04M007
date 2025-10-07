@@ -1,0 +1,100 @@
+#box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+p{
+    background-color: red;
+    display: inline;
+    
+}
+
+b{
+    background-color: aqua;
+    display: block;
+}
+
+strong{
+    background-color: blue;
+    display: inline-block;
+    width: 200px;
+}
+
+h1{
+    display: inline-block;
+    background-color:pink;
+}
+
+
+#container-box{
+    width: 400px;
+    height: 300px;
+    border: 2px solid red;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2px; */
+    /* justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center; */
+    /* justify-content: space-evenly; */
+
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 4px;
+}
+
+.box{
+    /* width: 50px; */
+    /* height: 50px; */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* #box1{.
+    flex: grow 2; 
+} */
+
+/* #box2{
+    flex-shrink: 2;
+} */
+
+#box1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: purple;
+}
+
+#box2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: purple;
+}
+
+#box6{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    background-color: purple;
+}
+
+.box3, .box5, .box7{
+    background-color:pink;
+
+}
+
+.box4, .box8{
+    background-color: aqua
+}
+
+.box
