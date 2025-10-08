@@ -1,0 +1,70 @@
+.container{
+    max-width: 1000px;
+    /* height: 400px; */
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content:end ; */
+    /* flex-direction: row-reverse; */
+
+
+
+
+
+}
+
+.item{
+    /* height: 200px; */
+    width: 200px;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+    display: flex;
+    /* flex-grow: 1; */
+}
+
+/* .item2{
+    /* flex-grow:2; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 500px; */
+    
+/* 
+
+/* .item1{
+    order: 6;
+}
+item3{
+    order: 5;
+}
+.item4{
+    order: 2;
+
+}
+.item5{
+    order: ;
+
+}
+.item{
+    order: px;
+
+
+}
+ */
+
+
+
+
+
+ /* uits
+ px
+ yh
+ vd
+ vw
+ %
+ em
+ rem
+  */
