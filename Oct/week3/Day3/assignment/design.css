@@ -53,96 +53,70 @@ body{
   justify-content: space-between;
 }
 
-.logo {
-  font-weight: 600;
-  color: #ff7b00;
-  font-size: 1.3rem;
-  margin-bottom: 40px;
+.classification h3{
+color: #888;
+margin-bottom: 10px;
+font-size: 30px;
 }
 
-h3 {
-  color: #888;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
-}
-
-.info li {
-  list-style: none;
-  margin: 8px 0;
-  font-size: 0.95rem;
+.classification p{
+  font-size: 15px;
   color: #333;
+  margin-bottom: 20px;
 }
 
-/* MIDDLE SECTION */
-.middle {
-  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.insect-display img {
-  width: 80%;
-  max-height: 400px;
-  object-fit: contain;
-}
 
 /* RIGHT SECTION */
 .right {
-  background: #e74c3c;
-  color: #fff;
-  padding: 60px 40px;
+  width: 60px;
+  background-color: #e0453f;
+  color: white;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
 }
 
-.right h1 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
+.contenth1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.right p {
-  line-height: 1.6;
-  font-size: 1rem;
-  margin-bottom: 25px;
+.content p{
+  margin: 5px 0;
+  font-size: 1.2rem;
 }
 
-.price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 25px;
+.content h2{
+  margin: 15px 0;
+  font-size: 1.2rem;
 }
 
 .btn {
-  background: #fff;
-  color: #e74c3c;
+  background:white;
+  color: #e0453f;
   border: none;
-  padding: 12px 24px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .btn:hover {
-  background: #ffebeb;
+  background: #333;
+  color: white;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
+/* IMAGE */
+.image img{
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
 
-  .right {
-    text-align: center;
-  }
-
-  .insect-display img {
-    width: 60%;
-  }
+  /* object-fit:contain,*/
+  position: absolute;
+  top: 20%;
+  left: 1px;
 }
