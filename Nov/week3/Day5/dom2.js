@@ -13,3 +13,28 @@ console.log(Firstp);
 let classes = document.querySelectorAll(".box");
 console.log(classes);
 
+
+// classList
+ let classlist = divFirst.classList;
+console.log(classlist);
+
+// textContent
+let textContent= divFirst.textContent;
+console.log(textContent);
+
+// innerText
+let innerText= divFirst.innerText;
+console.log(innerText);
+
+// setAttribute
+divFirst.setAttribute("Id","headingId");
+console.log(divFirst);
+
+// getAttribute
+console.log(divFirst.getAttribute("class"));
+
+
+
+
+
+
