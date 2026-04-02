@@ -24,7 +24,7 @@ function Home() {
                 <h1 className="font-['Playfair_Display'] text-[4rem] mb-5 text-white leading-[1.2] font-bold">Best food for <span className=" ">your taste</span></h1> 
                 <p className="font-['Poppins'] text-[1.2rem] mb-10 leading-[1.6] drop-shadow-[1px_1px_2px_rgba(0,0,0,0.3)]">Experience exquisite flavors and create unforgettable memories <span className='block'>in a place that feels like home</span> </p>
                     <div className='flex gap-5 justify-center'>
-                        <button className='bg-[#ff6b6b]  inline-block px-5 py-3 text-white font-bold rounded-full cursor-pointer transition-all duration-300 ease-linear hover:bg-[#ff8e8e] hover:-translate-y-1'>Book a table</button>
+                        {/* <button className='bg-[#ff6b6b]  inline-block px-5 py-3 text-white font-bold rounded-full cursor-pointer transition-all duration-300 ease-linear hover:bg-[#ff8e8e] hover:-translate-y-1'>Book a table</button> */}
                         <button className='bg-white border-2 border-[#ff6b6b]  text-[#ff6b6b] inline-block px-5 py-2.5 hover:text-white font-bold rounded-full cursor-pointer transition-all duration-300 ease hover:bg-[#ff8e8e] hover:-translate-y-1 ' onClick={() => navigate("/Foods")}>Explore Menu</button>
                     </div>
             </div>

@@ -1,71 +1,49 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 
 function Register() {
-    let [name,setName]=useState("");
-    let [email,setEmail]=useState("");
-    let [phone,setPhone]=useState("");
-    let [password,setPassword]=useState("");
+    let [name,setName] = useState("")
+    let [email,setEmail] = useState("")
+    let [phone, setPhone] = useState("")
+    let [password,setPassword] = useState("")
 
-    function handleRegister(){
-        localStorage.setItem("user",JSON.stringify({name,email,phone,password}));
+    function handleRegister(e){
+        e.preventDefault();
+        try {
+          let oldData = localStorage.getItem("users");
+          let users = oldData? JSON.parse(oldData) : [];
+          users.push({name,email,phone, password});
+          // or
+          // users = [...users,{name,email,phone, password}]
+          localStorage.setItem("users",JSON.stringify(users))
+          setName("")
+          setEmail("")
+          setPhone("")
+          setPassword("")
+          toast.success("Rgistration successful")
+          
+        } catch (error) {
+          toast.error("register failed")
+        }
     }
-
-
-
   return (
-    <div>
-      <label htmlFor="full name">Full Name:</label>
-        <input
-         type="text" 
-         value={name}
-         placeholder="Enter your name" 
-         className="block border rounded-lg"  
-         onChange={(e)=>setName(e.target.value)}
-
-
-         />
-        
-
-         <label htmlFor="Email">Email:</label>
-        <input
-         type="text"
-         value={email}
-          placeholder="Enter your email" 
-          className="block border rounded-lg"
-          onChange={(e)=>setEmail(e.target.value)}
-          />
-        
-
-        <label htmlFor="Password">Password:</label>
-        <input 
-        type="password"
-        value={password}
-         placeholder="Enter your password"
-         className="block border rounded-lg"
-         onChange={(e)=>setPassword(e.target.value)}
-
-
-         />
-        
-
-        <label htmlFor="Phone Number">Phone Number:</label>
-        <input
-            type="text"
-            value={phone}
-            placeholder="Enter your phone number"
-            className="block border rounded-lg"
-            onChange={(e)=>setPhone(e.target.value)}
-            />
-        
-<br />
-
-        <button
-        type="submit"
+    <div className='mt-20'>
+        <label htmlFor="">Full Name</label>
+        <input type="text" name="" value={name} className='border rounded-lg' onChange={(e)=>setName(e.target.value)}/>
+        <br />
+        <label htmlFor="">Email</label>
+        <input type="email" name="" value={email}  className='border rounded-lg' onChange={(e)=>setEmail(e.target.value)}/>
+        <br />
+        <label htmlFor="">Phone</label>
+        <input type="number" name="" value={phone} className='border rounded-lg' onChange={(e) =>setPhone(e.target.value)}/>
+        <br />
+        <label htmlFor="">Password</label>
+        <input type="password" name="" value={password}  className='border rounded-lg' onChange={(e)=>setPassword(e.target.value)}/>
+        <br />
+        <button type="submit"
         className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
         onClick={handleRegister}
-        
-        >Register</button>
-
+        >submit</button>
     </div>
   )
 }
